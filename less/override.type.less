@@ -31,8 +31,12 @@ p {
 }
 
 blockquote {
-  padding: (@line-height-base / 2) @line-height-base (@line-height-base / 2);
-  margin: @line-height-base 0 @line-height-base -@line-height-base;
+
+  @media (min-width: @screen-sm) {
+    padding: (@line-height-base / 2) @line-height-base (@line-height-base / 2);
+    margin: @line-height-base 0 @line-height-base -@line-height-base;
+  }
+  
 
   p {
     font-style: italic;

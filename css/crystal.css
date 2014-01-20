@@ -6000,9 +6000,11 @@ h6 .small {
 p {
   margin: 0 0 1.42857143em;
 }
-blockquote {
-  padding: 0.714285715em 1.42857143em 0.714285715em;
-  margin: 1.42857143em 0 1.42857143em -1.42857143em;
+@media (min-width: 768px) {
+  blockquote {
+    padding: 0.714285715em 1.42857143em 0.714285715em;
+    margin: 1.42857143em 0 1.42857143em -1.42857143em;
+  }
 }
 blockquote p {
   font-style: italic;
