@@ -44,12 +44,22 @@
           </div>
 
             <div class="container">
-                <h1>Crystal</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="300px" height="250px" viewBox="0 0 600 450" version="1.1">
+                    <path stroke="#3498db" fill="rgba(0,0,0,0)" stroke-width="6px" opacity="1.00" d=" M 300.22 76.48 C 309.02 103.68 317.23 131.07 325.99 158.28 C 353.16 145.85 379.67 132.03 406.96 119.87 C 394.18 145.87 381.10 171.73 368.16 197.65 C 395.48 206.77 422.74 216.09 449.93 225.60 C 422.87 234.17 395.86 242.87 368.87 251.63 C 381.99 278.30 394.12 305.44 406.95 332.24 C 380.93 320.22 356.13 305.75 330.08 293.77 C 319.58 320.55 310.86 348.01 299.79 374.55 C 290.99 348.01 282.78 321.27 273.99 294.73 C 247.39 306.71 221.39 320.00 194.75 331.92 C 207.02 306.01 221.17 281.05 233.84 255.34 C 205.76 245.67 177.90 235.39 149.90 225.48 C 177.72 217.08 205.29 207.86 233.16 199.62 C 219.97 173.07 207.14 146.34 194.04 119.74 C 220.20 132.46 245.76 146.37 271.84 159.26 C 281.85 131.86 289.76 103.72 300.22 76.48 M 291.40 180.48 C 279.12 181.70 268.89 190.24 262.13 200.10 C 249.72 215.92 251.56 240.43 264.76 255.23 C 273.14 265.27 285.30 273.54 299.00 272.15 C 324.88 274.35 348.73 249.56 347.04 223.97 C 347.00 207.30 335.85 192.26 321.61 184.43 C 312.43 179.50 301.51 179.24 291.40 180.48 Z">
+                        <animateTransform attributeName="transform"
+                                    type="rotate"
+                                    from="0 300 225" to="360 300 225"
+                                    begin="0s" dur="5s"
+                                    repeatCount="indefinite"
+                          />
+                    </path>
+                </svg>
+                <!--<h1 style="margin-top: 0">Crystal</h1>-->
                 <h4>Twitter Bootstrap Theme</h4>
                 <p>Crystal is the cleanest theme for Twitter Bootstrap  which purpose is to deliver the best readability on the whole range of devices.</p>
                 <br>
                 <p><button class="btn btn-primary btn-lg">Tweet</button></p>
-                <p><i>Proudly crafted by <a href="http://twitter.com/pukhalski">@pukhalski</a></i></p>
+                <p><i>Handcrafted by <a href="http://twitter.com/pukhalski">@pukhalski</a></i></p>
             </div>
         </div>
 
@@ -60,19 +70,38 @@
            
            <p>
                Crystal Theme is built with a purpose to deliver a better reading experience. It utilizes em-based typography that rely on different number of characters per line (CPL) for different viewport sizes. It is the most important parameter for responsive typography in our fast-changing multi-device world.
-           </p>
+           </p>   
 
-            <ul>
-                <li>~<b>35</b> CPL &mdash; up to 320px</li>
-                <li>~<b>43</b> CPL &mdash; 321-767px wide</li>
-                <li>~<b>60</b> CPL &mdash; 768-990px wide</li>
-                <li>~<b>65</b> CPL &mdash; 991-1200px wide</li>
-                <li>~<b>85</b> CPL &mdash; 1201px and wider</li>
-            </ul>            
+            <table class="table centered table-bordered">
+                <tr>
+                    <th class="centered">Screen Size</th>
+                    <th class="centered">Characters per Line (Approx.)</th>
+                </tr>
+                <tr>
+                    <td>Up to 320px</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>321–767px</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>768–990px</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>991–1200px</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>1201px and wider</td>
+                    <td>85</td>
+                </tr>
+            </table>       
 
             <h2>Why so serious?</h2>
             
-            <p>The typography scale was implemented using the ideas described in the next articles:</p>      
+            <p>The typography scale was implemented using the ideas described in the next sources:</p>      
             <ol>
                <li>&#147;<a href="http://www.pearsonified.com/2012/01/characters-per-line.php">How to Tune Typography Based on Characters Per Line</a>&#148; by Chris Pearson</li>
                <li>&#147;<a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A More Modern Scale for Web Typography</a>&#148; by Jason Pamenta</li>
@@ -80,20 +109,14 @@
 
             <blockquote><p>Responsive Web Design is a big deal, and your typography is one of the most noticeable elements in your design.</p></blockquote>
 
-            <h3>EM-based approach for typography scale</h3>
-
+            <h3>Customize Crystal</h3>
+            <p>
+                Developing Crystal I didn't touch Twitter Bootstrap files. I just overrided all the variable values as well as extened each module with a custom LESS file. So it makes pretty easy to update Twitter Bootstrap behind and customize the theme itself:
+            </p>
             <ul>
-               <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-               <li>Aliquam tincidunt mauris eu risus.</li>
+               <li>Change variable values in <code>less/variables.less</code> (the most important one will be <code>@brand-primary-color</code>, that will affect the main theme color)</li>
+               <li>Rebuild <code>bootstrap-crystal.css</code> compiling it from <code>less/bootstrap-crystal.less</code></li>
             </ul>
-
-            <pre><code>
-            #header h1 a { 
-                display: block; 
-                width: 300px; 
-                height: 80px; 
-            }
-            </code></pre>
         </div>
     
 

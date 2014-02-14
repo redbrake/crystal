@@ -10,6 +10,16 @@ fieldset, label, input, textarea, .form-control {
   }
 }
 
+input, textarea, .form-control {
+    border-width: 2px;
+    box-shadow: none !important;
+
+    &[disabled] {
+        color: #fff;
+    }
+}
+
+
 legend {
   padding-bottom: 0.33em;
   font-family: @headings-font-family;
