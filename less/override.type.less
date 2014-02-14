@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    letter-spacing: -0.05em;
+    font-weight: 600;
 }
 
 h1,
@@ -15,6 +15,9 @@ h5,
 h6 {
   margin-top: (@line-height-base / 2);
   margin-bottom: (@line-height-base / 2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
 }
 
 p {
@@ -45,4 +48,14 @@ blockquote {
 ul,
 ol {
   margin-bottom: (@line-height-base);
+}
+
+.page-header {
+    padding-bottom: 0;
+    margin: (@line-height-computed * 2) 0 (@line-height-computed * 2);
+    border-bottom: 1px solid @page-header-border-color;
+
+    h1, h2, h3 {
+        margin-bottom: (@line-height-base / 8);
+    }
 }

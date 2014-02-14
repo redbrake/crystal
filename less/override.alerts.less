@@ -1,0 +1,25 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: @alert-padding (@alert-padding * 2);
+  border: none;
+  border-left: .5em solid;
+}
+
+.alert-dismissable {
+ padding-right: 0;
+
+  // Adjust close link position
+  .close {
+    top: -(@alert-padding / 2);
+    right: (@alert-padding / 2);
+    color: inherit;
+  }
+}
+

@@ -1,0 +1,31 @@
+table {
+  font-family: @headings-font-family;
+  font-size: (@line-height-computed * .75); 
+}
+
+.table {
+   th {
+    background-color: @brand-primary;
+    color: white;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: @font-size-small;
+  }
+}
+
+
+
+
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+
+// Generate the contextual variants
+.table-row-variant(active; @table-bg-active);
+.table-row-variant(success; @state-success-border);
+.table-row-variant(danger; @state-danger-border);
+.table-row-variant(warning; @state-warning-border);
+
+

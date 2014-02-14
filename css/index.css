@@ -1,4 +1,4 @@
-.jumbotron {
+.jumbotron.main {
     background: url('../images/bg.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -12,6 +12,22 @@
     margin-top: 0;
 }
 
-.navbar {
-    margin-top: 1em;
+.navbar.main {
+    background-color: transparent;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.buttons .btn, .buttons .btn-group {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.buttons .btn-group .btn {
+    margin-bottom: 0;
+}
+
+.centered {
+    text-align: center;
 }
