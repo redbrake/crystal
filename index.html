@@ -4,22 +4,36 @@
         <title>Crystal Bootstrap Theme</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/crystal.css" media="screen">
+        <link rel="stylesheet" href="css/bootstrap-crystal.css" media="screen">
         <link rel="stylesheet" href="css/index.css" media="screen">
         <script type="text/javascript">
             //todo: install GA  
         </script>
     </head>
     <body>
-        <div class="navbar main">
+        
+
+        <div class="jumbotron main centered">
+            <div class="navbar main">
             
-              <div class="navbar-header">
-                <a href="/" class="navbar-brand">IP</a>
-              </div>
+              
+                <a href="/" class="navbar-brand"><b>C R Y S T A L</b></a>
+              
               <div class="pull-right">
                 <ul class="nav navbar-nav ">
-                  <li>
-                    <a href="#">Showcase</a>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Showcase <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#navbar">Navbar</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#navs">Navs</a></li>
+                        <li><a href="#indicators">Indicators</a></li>
+                        <li><a href="#progress">Progress Bars</a></li>
+                        <li><a href="#containers">Containers</a></li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Download</a>
@@ -29,20 +43,19 @@
             
           </div>
 
-        <div class="jumbotron main">
             <div class="container">
                 <h1>Crystal</h1>
                 <h4>Twitter Bootstrap Theme</h4>
                 <p>Crystal is the cleanest theme for Twitter Bootstrap  which purpose is to deliver the best readability on the whole range of devices.</p>
                 <br>
-                <p class="centered"><i><button class="btn btn-primary btn-lg">Share</button>&nbsp; or &nbsp;<button class="btn btn-info btn-lg">Tweet</button></i></p>
-                <p class="centered"><i>Proudly crafted by <a href="http://twitter.com/pukhalski">@pukhalski</a></i></p>
+                <p><button class="btn btn-primary btn-lg">Tweet</button></p>
+                <p><i>Proudly crafted by <a href="http://twitter.com/pukhalski">@pukhalski</a></i></p>
             </div>
         </div>
 
         <div class="container">
             <div class="page-header">
-                <h1>Typography</h1>
+                <h1 id="typography">Typography</h1>
             </div>
            
            <p>
@@ -67,7 +80,7 @@
 
             <blockquote><p>Responsive Web Design is a big deal, and your typography is one of the most noticeable elements in your design.</p></blockquote>
 
-            <h3>REM-based approach for typography scale</h3>
+            <h3>EM-based approach for typography scale</h3>
 
             <ul>
                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -522,7 +535,6 @@
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
                     <li><a href="#">»</a></li>
                   </ul><br>
                   <ul class="pagination pagination-lg">
@@ -657,7 +669,7 @@
             </div>
 
             <div class="jumbotron">
-                <h1>Jumbotron</h1>
+                <h1>Hero Unit</h1>
                 <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <p><a class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
@@ -700,11 +712,11 @@
                 
                   <div class="list-group">
                     <a href="#" class="list-group-item">
-                      <h4 class="list-group-item-heading">List group item heading</h4>
+                      <h5 class="list-group-item-heading">List group item heading</h5>
                       <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
                     <a href="#" class="list-group-item">
-                      <h4 class="list-group-item-heading">List group item heading</h4>
+                      <h6 class="list-group-item-heading">List group item heading</h6>
                       <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
                   </div>

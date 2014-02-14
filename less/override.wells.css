@@ -1,0 +1,12 @@
+.well {
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  border: none;
+  box-shadow: none;
+}
+.well-lg {
+  padding: 1.2em 2em;
+}
+.well-sm {
+  padding: .3em .6em;
+}

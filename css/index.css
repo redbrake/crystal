@@ -4,19 +4,26 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    padding-top: .5em;
     margin-bottom: 0;
-}
-
-.jumbotron h1 {
-    margin-top: 0;
 }
 
 .navbar.main {
     background-color: transparent;
-    margin-bottom: 0;
-    position: absolute;
     width: 100%;
+    padding: 1em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.navbar.main ul li {
+    display: inline-block !important;
+    margin: 0 .5em;
+}
+
+.navbar.main ul li a {
+    border: 1px solid #3498db;
 }
 
 .buttons .btn, .buttons .btn-group {
@@ -31,3 +38,27 @@
 .centered {
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+
+    .navbar.main .pull-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        float: none;
+        margin-bottom: 1em;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+
+    }
+}
+
