@@ -1,5 +1,52 @@
 .nav {
     font-family: @headings-font-family;
+    letter-spacing: .05em;
+
+    &.nav-pills {
+        background-color: @gray-dark;
+        display: inline-block;
+        border-radius: @border-radius-base;
+
+        .dropdown-menu {
+            background-color: @gray-dark;
+            border: none;
+            border-top: 1px solid darken(@gray-darker, 10%);
+
+            li > a {
+                color: white;
+                font-weight: 300;
+            }
+        }
+
+        > li {
+            margin-left: 0;
+            margin-top: 0;
+
+            &.disabled > a {
+              color: @nav-disabled-link-color;
+
+              &:hover,
+              &:focus {
+                color: @nav-disabled-link-hover-color;
+              }
+            }
+
+            > a {
+                border-radius: 0;
+                color: white;
+
+                &:first-child,
+                &:last-child {
+                    border-radius: @border-radius-base;  
+                }
+
+                &:hover, &:focus {
+                    color: @brand-primary;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 
     > li {
         margin: 0 ;

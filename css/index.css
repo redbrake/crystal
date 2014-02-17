@@ -18,7 +18,7 @@
 }
 
 .navbar.main ul.nav > li {
-    display: inline-block !important;
+    display: inline-block;
     margin: 0 .5em;
 }
 
@@ -78,6 +78,15 @@
     th, td {
         vertical-align: middle !important;
     }
+
+    .navbar.main ul.nav > li {
+        margin-bottom: 1em;
+    }
+}
+
+.nav-pills .glyphicon {
+    width: 3.5em;
+    margin-top: -1px;
 }
 
 

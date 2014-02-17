@@ -119,9 +119,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              @navbar-default-brand-color;
+@btn-default-color:              @brand-primary;
 @btn-default-bg:                 rgba(0,0,0,0);
-@btn-default-border:             @navbar-default-brand-color;
+@btn-default-border:             @brand-primary;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -153,7 +153,7 @@
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @gray;
-@input-border:                   #ccc;
+@input-border:                   lighten(@gray-light, 20%);
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             @brand-primary;
 
@@ -260,11 +260,11 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
-@navbar-margin-bottom:             (@line-height-computed * 2);
+@navbar-height:                    10px;
+@navbar-margin-bottom:             2em;
 @navbar-border-radius:             @border-radius-base;
-@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
-@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-padding-horizontal:        1.2em;
+@navbar-padding-vertical:          .6em;
 
 @navbar-default-color:             #777;
 @navbar-default-bg:                rgba(0,0,0,0);
@@ -272,7 +272,7 @@
 
 // Navbar links
 @navbar-default-link-color:                @brand-primary;
-@navbar-default-link-hover-color:          lighten(@link-color, 15%);
+@navbar-default-link-hover-color:          lighten(@link-color, 10%);
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            @brand-primary;
@@ -280,8 +280,8 @@
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
-@navbar-default-brand-color:               @navbar-default-link-color;
-@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-color:               @brand-primary;
+@navbar-default-brand-hover-color:         lighten(@link-color, 10%);
 @navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
@@ -298,17 +298,17 @@
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @brand-primary;
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 #fff;
+@navbar-inverse-link-hover-color:           @brand-primary;
 @navbar-inverse-link-hover-bg:              transparent;
-@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-color:          #fff;
 @navbar-inverse-link-active-bg:             @brand-primary;
 @navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-color:          @brand-primary;
 @navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar toggle
@@ -320,7 +320,7 @@
 // Navs
 // -------------------------
 
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          .4em 1.2em;
 @nav-link-hover-bg:                         @brand-primary;
 
 @nav-disabled-link-color:                   @gray-light;
@@ -570,7 +570,7 @@
 // -------------------------
 @breadcrumb-bg:               #f5f5f5;
 @breadcrumb-color:            @gray-light;
-@breadcrumb-active-color:     @gray-dark;
+@breadcrumb-active-color:     @gray-darker;
 @breadcrumb-separator:        "·";
 
 
