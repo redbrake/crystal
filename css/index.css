@@ -43,13 +43,18 @@
     text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 830px) {
+
+    .navbar.main .nav, .navbar.main .nav li {
+        float: none;
+        text-align: center;
+    }
 
     .navbar.main .pull-right {
         display: block;
         width: 100%;
         text-align: center;
-        float: none;
+        float: none!important;
     }
 
     .navbar.main .navbar-brand {
@@ -87,6 +92,17 @@
 .nav-pills .glyphicon {
     width: 3.5em;
     margin-top: -1px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    margin: 2em 0 0;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
 }
 
 

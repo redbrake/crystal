@@ -9,9 +9,9 @@
 // Grays
 // -------------------------
 
-@gray-darker:            lighten(#000, 13.5%); 
+@gray-darker:            darken(#2c3e50, 13.5%); 
 @gray-dark:              #2c3e50;   
-@gray:                   lighten(#000, 33.5%); 
+@gray:                   lighten(#2c3e50, 13.5%); 
 @gray-light:             #7f8c8d;  
 @gray-lighter:           #ecf0f1; 
 
@@ -260,7 +260,7 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    10px;
+@navbar-height:                    50px;
 @navbar-margin-bottom:             2em;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        1.2em;
@@ -313,8 +313,8 @@
 
 // Inverted navbar toggle
 @navbar-inverse-toggle-hover-bg:            #333;
-@navbar-inverse-toggle-icon-bar-bg:         #fff;
-@navbar-inverse-toggle-border-color:        #333;
+@navbar-inverse-toggle-icon-bar-bg:         @brand-primary;
+@navbar-inverse-toggle-border-color:        @brand-primary;
 
 
 // Navs
@@ -372,7 +372,7 @@
 
 @jumbotron-padding:              3em;
 @jumbotron-color:                @gray-lighter;
-@jumbotron-bg:                   @gray-darker;
+@jumbotron-bg:                   @gray-dark;
 @jumbotron-heading-color:        inherit;
 @jumbotron-font-size:            1em;
 
@@ -570,7 +570,7 @@
 // -------------------------
 @breadcrumb-bg:               #f5f5f5;
 @breadcrumb-color:            @gray-light;
-@breadcrumb-active-color:     @gray-darker;
+@breadcrumb-active-color:     @gray-dark;
 @breadcrumb-separator:        "·";
 
 
