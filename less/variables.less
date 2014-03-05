@@ -90,9 +90,9 @@
 @line-height-large:              1.33;
 @line-height-small:              1.5;
 
-@border-radius-base:             2px;
-@border-radius-large:            2px;
-@border-radius-small:            2px;
+@border-radius-base:             5px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
 
 @component-active-color:         #fff;
 @component-active-bg:            @brand-primary;
@@ -149,15 +149,15 @@
 // Forms
 // -------------------------
 
-@input-bg:                       #fff;
+@input-bg:                       transparent;
 @input-bg-disabled:              @gray-lighter;
 
-@input-color:                    @gray;
-@input-border:                   lighten(@gray-light, 20%);
-@input-border-radius:            @border-radius-base;
+@input-color:                    @gray-dark;
+@input-border:                   @gray;
+@input-border-radius:            0;
 @input-border-focus:             @brand-primary;
 
-@input-color-placeholder:        darken(@gray-lighter, 10%);
+@input-color-placeholder:        @gray-light;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);

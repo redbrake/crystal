@@ -11,12 +11,29 @@ fieldset, label, input, textarea, .form-control {
 }
 
 input, textarea, .form-control {
-    border-width: 2px;
+    border: none;
+    border-bottom: solid 2px @input-border;
     box-shadow: none !important;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: 1px;
+    border-radius: 0;
 
     &[disabled] {
         color: #fff;
+        padding: 6px;
+        border-color: darken(@gray-lighter, 20%);
+        background-color: transparent;
     }
+
+    &.input-lg {
+      font-size: 1.2em;
+    }
+}
+
+textarea, textarea.form-control, select, select.form-control {
+    border: solid 2px @input-border;
+    padding: 6px;
 }
 
 
